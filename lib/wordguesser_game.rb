@@ -53,5 +53,13 @@ class WordGuesserGame
       :play
     end
   end
+  
+  def win?
+    check_win_or_lose == :win
+  end
+
+  def lose?
+    check_win_or_lose == :lose
+  end
 
 end
